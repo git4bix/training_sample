@@ -1,0 +1,13 @@
+import tkinter
+root = tkinter.Tk()
+top_frame = tkinter.Frame(root, bg="lightblue", height=100)
+top_frame.pack(fill="x")
+bottom_frame = tkinter.Frame(root, bg="lightgreen", height=200)
+bottom_frame.pack(fill="both", expand=True)
+label1 = tkinter.Label(top_frame, text="Top Frame", bg="blue")
+label1.pack(pady=10)
+label2 = tkinter.Label(top_frame, text="Bot Frame", bg="green")
+label2.pack(pady=20)
+button = tkinter.Button(top_frame, text="Click Me")
+button.pack(pady=10)
+root.mainloop()
